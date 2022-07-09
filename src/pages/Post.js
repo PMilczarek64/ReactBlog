@@ -1,9 +1,11 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/esm/Button";
+import { Link, NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 
 
-const Post = ({title, author, publishedDate, shortDescription}) => {
+const Post = ({title, author, publishedDate, shortDescription, id}) => {
   return (
       <Card>
         <Card.Body>
@@ -13,7 +15,7 @@ const Post = ({title, author, publishedDate, shortDescription}) => {
           <Card.Text>
             <p>{shortDescription}</p>
           </Card.Text>
-          <Button variant="primary">Read more</Button>
+          <Nav.Link as={NavLink} to={"/post/" + id} className="px-0"><Button variant="primary">Read more</Button></Nav.Link>
         </Card.Body>
       </Card>
   );

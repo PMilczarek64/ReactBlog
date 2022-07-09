@@ -6,15 +6,18 @@ import Nav from 'react-bootstrap/Nav';
 
 const NavBar = () => {
   return (
-    <Navbar bg="primary" variant="dark" expand="lg" className="rounded my-4" >
+    <Navbar bg="primary" variant="dark" className="rounded my-4" >
       <Container>
-      <Navbar.Brand href="/">Post app</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav"></Navbar.Collapse>
-        <Nav className="me-auto">
-          <Nav.Link as={NavLink} to="/">Home</Nav.Link>
-          <Nav.Link as={NavLink} to="/about">About</Nav.Link>
-        </Nav>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="d-flex justify-content-between">
+          <Nav>
+            <Nav.Link as={NavLink} to="/" className="fs-4">Blog.app</Nav.Link>
+          </Nav>
+          <Nav className="fs-5">
+            <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
 

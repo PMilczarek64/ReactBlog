@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from "./views/Header";
 import Footer from "./views/Footer";
+import SinglePost from "./pages/SinglePost";
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/post/:postId" element={<Post />} />
+        <Route path="/post/:postId" element={<SinglePost />} />
         <Route path="/post/edit/:postId" element={<EditPost />} />
         <Route path="/post/add" element={<AddPost />} />
       </Routes>
