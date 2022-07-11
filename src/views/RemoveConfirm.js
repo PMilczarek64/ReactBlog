@@ -2,8 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useDispatch } from 'react-redux';
 import { removePost } from '../redux/postsRedux';
-import { NavLink } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
 
 const RemoveConfirm = ({handleClose, showModal, id}) => {
 
@@ -24,7 +22,7 @@ const RemoveConfirm = ({handleClose, showModal, id}) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Nav.Link as={NavLink} to="/"><Button variant="danger" onClick={handleDelete}>Delete</Button></Nav.Link>
+          <Button variant="danger" onClick={handleDelete}>Delete</Button>
         </Modal.Footer>
       </Modal>
     </>

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from 'prop-types';
 import { getPostById } from "../redux/postsRedux";
 import { useSelector } from "react-redux";
 import { useParams } from 'react-router';
@@ -7,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/esm/Button";
 import Nav from 'react-bootstrap/Nav';
-import Modal from 'react-bootstrap/Modal';
+import { Navigate } from 'react-router-dom';
 import RemoveConfirm from "../views/RemoveConfirm";
 
 
@@ -20,6 +19,9 @@ const SinglePost = () => {
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
+
+  if(!postData) return <Navigate to="/" />
+  else
 
   return (
     <div>
