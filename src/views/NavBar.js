@@ -10,9 +10,9 @@ const NavBar = () => {
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="d-flex justify-content-between">
-          <Nav>
+          <Navbar.Brand className="solid">
             <Nav.Link as={NavLink} to="/" className="fs-4">Blog.app</Nav.Link>
-          </Nav>
+          </Navbar.Brand>
           <Nav className="fs-5">
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>

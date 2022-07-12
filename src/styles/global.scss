@@ -10,3 +10,21 @@
     margin-inline: 0;
   }
 }
+
+.half-width {
+  width: 50%;
+}
+
+.shortDescription {
+  min-height: 50px;
+}
+
+.mainContent {
+  min-height: 150px;
+}
+
+.solid {
+  .nav-link{
+  color: white;
+  }
+}

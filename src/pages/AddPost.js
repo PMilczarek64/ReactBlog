@@ -1,9 +1,11 @@
 import React from "react";
+import PostAddForm from "../features/PostAddForm";
 
 const AddPost = () => {
   return(
-    <div>
-      <h2>add post...</h2>
+    <div className="mar-x-post">
+      <h2>Add post</h2>
+      <PostAddForm />
     </div>
   );
 };

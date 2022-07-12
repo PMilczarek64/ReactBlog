@@ -5,7 +5,7 @@ posts: [
     title: 'Article title',
     shortDescription: 'Short description of the article...',
     content: 'Main content of the article',
-    publishedDate: '02-02-2022',
+    publishedDate: '2022-01-01',
     author: 'John Doe'
 },
 {
@@ -13,7 +13,7 @@ posts: [
   title: 'Article title',
   shortDescription: 'Short description of the article...',
   content: 'Main content of the article',
-  publishedDate: '02-03-2022',
+  publishedDate: '2022-03-02',
   author: 'Anna Doe'
 },
 {
@@ -21,7 +21,7 @@ posts: [
   title: 'Article title',
   shortDescription: 'Short description of the article...',
   content: 'Main content of the article',
-  publishedDate: '02-05-2022',
+  publishedDate: '2022-05-03',
   author: 'Patrick Doe'
 },
 {
@@ -29,7 +29,7 @@ posts: [
   title: 'Article title',
   shortDescription: 'Short description of the article...',
   content: 'Main content of the article',
-  publishedDate: '02-06-2022',
+  publishedDate: '2022-06-23',
   author: 'Jack Doe'
 },
 ],
