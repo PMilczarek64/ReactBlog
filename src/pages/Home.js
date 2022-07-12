@@ -20,9 +20,8 @@ const Home = () => {
       </div>
       <Row>
         {posts.map(post =>
-          <Col lg="4" sm="12" className="my-3">
+          <Col lg="4" sm="12" className="my-3" key={post.id}>
             <Post
-              key={post.id}
               id={post.id}
               title={post.title}
               shortDescription={post.shortDescription}

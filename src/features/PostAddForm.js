@@ -26,7 +26,7 @@ const PostAddForm = () => {
     setContent('');
   }
   return (
-    <Form>
+    <Form onSubmit={handleSubmit}>
       <div className="half-width">
         <Form.Group className="mb-3" controlId="formTitle">
           <Form.Label>Title:</Form.Label>
@@ -51,7 +51,7 @@ const PostAddForm = () => {
       <InputGroup className="contentent mb-3">
         <Form.Control as="textarea" aria-label="With textarea" value={content} onChange={e => setContent(e.target.value)}/>
       </InputGroup>
-      <Button variant="primary" type="submit" onClick={handleSubmit}>
+      <Button variant="primary" type="submit">
         Submit
       </Button>
     </Form>

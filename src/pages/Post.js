@@ -12,9 +12,7 @@ const Post = ({title, author, publishedDate, shortDescription, id}) => {
           <Card.Title>{title}</Card.Title>
           <p className="mb-2 fw-bold">Author: <span className="fw-normal">{author}</span></p>
           <p className="mb-2 fw-bold">Published: <span className="fw-normal">{publishedDate}</span></p>
-          <Card.Text>
-            <p>{shortDescription}</p>
-          </Card.Text>
+          <p>{shortDescription}</p>
           <Nav.Link as={NavLink} to={"/post/" + id} className="px-0"><Button variant="primary">Read more</Button></Nav.Link>
         </Card.Body>
       </Card>
