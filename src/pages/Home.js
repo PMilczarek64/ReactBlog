@@ -11,7 +11,6 @@ import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   const posts = useSelector(getAllPosts);
-  console.log(posts);
   return (
     <Container className="px-0">
       <div className="d-flex justify-content-between mt-4 mb-2">
