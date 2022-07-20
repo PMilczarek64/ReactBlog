@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import { getPostById } from "../redux/postsRedux";
 import { useSelector } from "react-redux";
 import { useParams } from 'react-router';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Navigate } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/esm/Button";
 import Nav from 'react-bootstrap/Nav';
-import { Navigate } from 'react-router-dom';
 import RemoveConfirm from "../views/RemoveConfirm";
 
 
@@ -42,7 +41,7 @@ const SinglePost = () => {
           <p className="mb-2 fw-bold">Author: <span className="fw-normal">{postData.author}</span></p>
           <p className="mb-2 fw-bold">Published: <span className="fw-normal">{postData.publishedDate}</span></p>
           <Card.Text className="my-4">
-            {postData.content}
+          <p dangerouslySetInnerHTML={{ __html: postData.content }} />
           </Card.Text>
         </Card.Body>
       </Card>
