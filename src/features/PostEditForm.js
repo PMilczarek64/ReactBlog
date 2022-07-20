@@ -28,7 +28,8 @@ const PostEditForm = () => {
         author={postData.author}
         publishedDate={postData.publishedDate}
         shortDescription={postData.shortDescription}
-        content={postData.content}>
+        content={postData.content}
+        category={postData.category}>
       </PostForm>
     );
 };

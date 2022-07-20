@@ -26,7 +26,8 @@ const Home = () => {
               shortDescription={post.shortDescription}
               content={post.mainContent}
               publishedDate={post.publishedDate}
-              author={post.author}>
+              author={post.author}
+              category={post.category}>
             </Post>
           </Col>)}
       </Row>

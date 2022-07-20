@@ -40,6 +40,7 @@ const SinglePost = () => {
         <Card.Body>
           <p className="mb-2 fw-bold">Author: <span className="fw-normal">{postData.author}</span></p>
           <p className="mb-2 fw-bold">Published: <span className="fw-normal">{postData.publishedDate}</span></p>
+          <p className="mb-2 fw-bold">Category: <span className="fw-normal">{postData.category}</span></p>
           <Card.Text className="my-4">
           <p dangerouslySetInnerHTML={{ __html: postData.content }} />
           </Card.Text>
