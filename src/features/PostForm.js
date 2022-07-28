@@ -29,7 +29,7 @@ const PostForm = ({ action, actionText, ...props }) => {
   const { register, handleSubmit: validate, formState: { errors } } = useForm();
 
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     setContentError(!content)
     if (content) {
       action({ title, author, publishedDate, shortDescription, content, category: postCategory });
@@ -64,7 +64,7 @@ const PostForm = ({ action, actionText, ...props }) => {
           {errors.date && <small className="d-block form-text text-danger mt-2">This field is required! </small>}
         </Form.Group>
         <Form.Label>Category:</Form.Label>
-        <Form.Select className="mb-3" aria-label="Default select example" onChange={e => setPostCategory(e.target.value)}>
+        <Form.Select className="mb-3" aria-label="Default select example" value={postCategory} onChange={e => setPostCategory(e.target.value)}>
           {postCategory && <option value={postCategory}>{postCategory}</option>}
           {categories.map(category => 
           category !== postCategory && <option value={category}>{category}</option>)}

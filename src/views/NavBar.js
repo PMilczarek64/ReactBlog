@@ -15,6 +15,7 @@ const NavBar = () => {
           </Navbar.Brand>
           <Nav className="fs-5">
             <Nav.Link as={NavLink} to="/">Home</Nav.Link>
+            <Nav.Link as={NavLink} to="/categories">Categories</Nav.Link>
             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
           </Nav>
         </Navbar.Collapse>
