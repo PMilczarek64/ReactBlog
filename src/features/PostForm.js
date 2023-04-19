@@ -22,7 +22,7 @@ const PostForm = ({ action, actionText, ...props }) => {
     props.shortDescription || ""
   );
   const [content, setContent] = useState(props.content || "");
-  const [postCategory, setPostCategory] = useState(props.category || "");
+  const [postCategory, setPostCategory] = useState(props.category || categories[0]);
   const [contentError, setContentError] = useState(false);
 
   console.log("post category is: ", postCategory);
