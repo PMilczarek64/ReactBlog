@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Post";
 import { useSelector } from "react-redux";
-import { getAllPosts, getPostsByCategory } from "../redux/postsRedux";
+import { getPostsByCategory } from "../redux/postsRedux";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";

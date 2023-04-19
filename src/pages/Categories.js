@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
-import { getAllCategories } from "../redux/postsRedux";
+import { getAllCategories } from "../redux/categoriesRedux";
 import { Card } from "react-bootstrap";
 import { NavLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
@@ -8,7 +8,6 @@ import Nav from 'react-bootstrap/Nav';
 const Categories = () => {
 
   const categories = useSelector(getAllCategories);
-  const [choosed, setChoosed] = useState(false);
 
   return (
     <div className="mar-x-post">

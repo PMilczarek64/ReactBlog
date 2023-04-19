@@ -37,8 +37,7 @@ const initialState = {
       category: 'Sport'
     },
   ],
-  categories: ['Movies', 'Sport', 'News'
-  ],
+  categories: ['Movies', 'Sport', 'News'],
 };
 
 export default initialState;
