@@ -13,8 +13,6 @@ import shortid from "shortid";
 const PostForm = ({ action, actionText, ...props }) => {
   const categories = useSelector(getAllCategories);
 
-  categories.map((category) => console.log(category));
-
   const [title, setTitle] = useState(props.title || "");
   const [author, setAuthor] = useState(props.author || "");
   const [publishedDate, setPublishedDate] = useState(props.publishedDate || "");
@@ -24,8 +22,6 @@ const PostForm = ({ action, actionText, ...props }) => {
   const [content, setContent] = useState(props.content || "");
   const [postCategory, setPostCategory] = useState(props.category || categories[0]);
   const [contentError, setContentError] = useState(false);
-
-  console.log("post category is: ", postCategory);
 
   const {
     register,

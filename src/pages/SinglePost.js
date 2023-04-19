@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from "react-bootstrap/esm/Button";
 import Nav from 'react-bootstrap/Nav';
 import RemoveConfirm from "../views/RemoveConfirm";
+import striptags from "striptags";
 
 
 
@@ -42,7 +43,7 @@ const SinglePost = () => {
           <p className="mb-2 fw-bold">Published: <span className="fw-normal">{postData.publishedDate}</span></p>
           <p className="mb-2 fw-bold">Category: <span className="fw-normal">{postData.category}</span></p>
           <Card.Text className="my-4">
-          <p dangerouslySetInnerHTML={{ __html: postData.content }} />
+          <p>{striptags(postData.content)}</p>
           </Card.Text>
         </Card.Body>
       </Card>
